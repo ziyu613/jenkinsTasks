@@ -6,11 +6,11 @@ node {
 	sh 'echo Starting pipeline'
 	}
 	
-	stage("check out"){
+	stage('check out'){
 	git 'https://github.com/ziyu613/jenkinsTasks.git'
 	}
 	
-	stage("building"){
+	stage('building'){
 	mvn install
 	}
     
